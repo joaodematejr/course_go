@@ -1,22 +1,25 @@
 package main
 
-func notaParaConceito(nota float64) string {
-	switch {
-	case nota >= 9 && nota <= 10:
-		return "A"
-	case nota >= 8 && nota < 9:
-		return "B"
-	case nota >= 5 && nota < 8:
-		return "C"
-	case nota >= 3 && nota < 5:
-		return "D"
+func tipo(i interface{}) string {
+	switch i.(type) {
+	case int:
+		return "Inteiro"
+	case float32, float64:
+		return "Real"
+	case string:
+		return "String"
+	case func():
+		return "Função"
 	default:
-		return "E"
+		return "Tipo não identificado"
 	}
+
 }
 
 func main() {
-	println(notaParaConceito(9.8))
-	println(notaParaConceito(6.9))
-	println(notaParaConceito(2.1))
+	println(tipo(9.8))
+	println(tipo(6))
+	println(tipo("Opa"))
+	println(tipo(func() {}))
+	println(tipo(map[string]int{}))
 }
