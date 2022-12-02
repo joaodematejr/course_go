@@ -13,3 +13,5 @@ https://github.com/cod3rcursos/curso-go
 
 
 Comando Ctrl + alt + n Run index.go
+
+go run *.go
