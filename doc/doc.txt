@@ -1,0 +1,15 @@
+Concorrencia vs Paralelismo
+
+Go é uma linguagem concorrente 
+
+Paralelismo - executar codigo simultaneamente em processadores fisicos diferentes
+
+Concorrencia - intercalar (administrar) varios processos ao mesmo tempo e isso pode ocorrer em unico processador fisicos
+
+concorrencia viabiliza Paralelismo
+
+é possivel que a concorrencia seja melhor que o Paralelismo
+
+Paralelismo exige mais do SO e do hardware
+
+Concorrencia - é a forma de estrtuturar o seu programa.
