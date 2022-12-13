@@ -3,5 +3,8 @@
         "Arrondada",
         "numeros",
         "rcursos"
-    ]
+    ],
+    "gopls": {
+        "experimentalWorkspaceModule": true,
+    }
 }
